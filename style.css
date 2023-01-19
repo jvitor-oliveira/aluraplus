@@ -1,0 +1,167 @@
+:root {
+    --branco-pricipal: #FFFFFF;
+    --cor-de-fundo: #00030C;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --fonte-principal: 'inter';
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-pricipal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.principal {
+    background-image: url(img/Background.png);
+    background-repeat:no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align:center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%; /*Estamos definindo que o grid vai ser em colunas e vai dividir a tela em duas colunas, ocupando 50% da tela em casa coluna */
+}
+
+.container__botao {
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-pricipal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.botao_secundario{
+    background-color: transparent;
+    border: 2px solid var(--branco-pricipal);
+}
+
+.container__aviso {
+    color: var(--cinza-secundario);
+    font-size: 12px;
+}
+
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__imagem {
+    margin: 1em 0em 2em 0em;
+}
+
+.container__caixa{
+    margin: 0 6em;
+}
+
+.secundario__imagem {
+    width: 80%;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-pricipal);
+    margin-bottom: 0.2em;
+}
+
+.descricao__texto {
+    color: var(--cinza-secundario);
+}
+
+.secundario__botao{
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__descricao{
+    padding: 2em;
+}
+
+.dispositivos {
+  text-align: center;
+
+}
+
+
+.dispositivo__titulo {
+    display: inline-block;
+    align-items: center;
+}
+
+.dispositivos__lista {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+  
+}
+
+.dispositivo__titulo {
+    font-size: 48px;
+    
+}
+
+.dispositivos__itens {
+    font-size: 32px;
+}
+
+.rodape{
+    text-align: center;
+    margin: 5em 3em;
+    
+}
+
+.rodape__logo {
+    margin-bottom: 2.5em;
+   
+}
+
+.rodape__lista{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 1.5em;
+}
+.rodape__itens {
+    list-style-type: none;
+    
+}
+
+.rodape__itens a:hover{
+    color: var(--botao-azul);
+}
+
+.rodape__itens a {
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--branco-pricipal);
+    margin-left: 1em;
+}
+
+.rodape p {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 14px;
+    color: var(--cinza-secundario);
+    margin-bottom: 2em;
+}
